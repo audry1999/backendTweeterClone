@@ -1,4 +1,5 @@
 import { Router } from "express";
-import { get } from "../controllers/get.js";
+import { getTweetId } from "../controllers/get.js";
+
 export const usersRouter = Router()
-usersRouter.get('/:id', get)
+usersRouter.get('/:id', getTweetId)

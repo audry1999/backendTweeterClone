@@ -8,6 +8,7 @@ import { usersRouter } from "./routes/users.js"
 
 const port = 4001
 const app = express()
+app.use(express.json())
 app.use('/tweets', tweetRouter)
 app.use('/user', userRouter)
 app.use('/users', usersRouter)
